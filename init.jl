@@ -1,5 +1,5 @@
 using Pkg, PackageCompiler
-
+@show Base.active_project()
 packages_to_precompile = (
     "Plots",
     "DataFrames",

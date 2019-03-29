@@ -1,1 +1,1 @@
-julia init.jl
+julia --project=@. init.jl
