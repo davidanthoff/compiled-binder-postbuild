@@ -1,1 +1,1 @@
-julia --project=${REPO_DIR} init.jl
+julia --project=. init.jl
