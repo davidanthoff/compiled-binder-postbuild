@@ -1,6 +1,5 @@
-Base.active_project()
-
 using Pkg
+pkg"activate ."
 pkg"add PackageCompiler" 
 using PackageCompiler 
 
