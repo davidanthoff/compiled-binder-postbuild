@@ -1,6 +1,6 @@
 ## Background
 
-This is an extension to [the `compiled-binder-example`](https://github.com/arnavs/compiled-binder-example). The idea here is to use PackageCompiler on Binder without a custom Dockerfile (i.e., integrating it with `repo2docker`'s native Julia support.)
+This is an extension to the base [`compiled-binder-example`](https://github.com/arnavs/compiled-binder-example) repo. The idea here is to use PackageCompiler on Binder without a custom Dockerfile (i.e., integrating it with `repo2docker`'s native Julia support.)
 
 ## Usage
 
@@ -18,7 +18,7 @@ Yes. As Simon mentions, this accounts for less than half the compilation cost of
 
 > How do I change the list of files to bake in?
 
-Edit the list of packages in the `init.jl` script. Note that packages named there must also be in your main `Project.toml`.
+Edit the list of packages in the `init.jl` script. Packages named there must also be in your main `Project.toml`.
 
 **Note:** PackageCompiler is still relatively fragile, and not all combinations of packages will succeed. 
 
