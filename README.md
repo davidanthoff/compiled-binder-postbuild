@@ -14,7 +14,9 @@ Inside a directory, open a Julia REPL and then hit `] activate`. This will initi
 
 > How do I change the list of files to bake in?
 
-[give an answer.]
+Edit the list of packages in the `init.jl` script. 
+
+**Note:** PackageCompiler is still relatively fragile, and not all combinations of packages will succeed. 
 
 > How do I deploy my own Binder (with my own badge, etc.?)
 
