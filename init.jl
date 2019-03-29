@@ -17,4 +17,4 @@ packages_to_bake = (
     "Query"
 )
 
-compile_package(packages_to_precompile..., force = true)
+compile_package(packages_to_bake..., force = true)
