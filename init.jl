@@ -1,3 +1,5 @@
+Base.active_project()
+
 using Pkg
 pkg"add PackageCompiler" 
 using PackageCompiler 
