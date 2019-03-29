@@ -6,8 +6,8 @@ packages_to_install = ["Plots",
     "GR",
     "Query",
     "Parameters"]
-
 Pkg.add(packages_to_install)
 
+# packages to bake in
 compile_package("Plots", "DataFrames", "Query", "GR", force = true)
 
