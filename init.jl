@@ -9,12 +9,5 @@ packages_to_install = ["Plots",
 
 Pkg.add(packages_to_install)
 
-# baking packages 
-packages_to_bake = (
-    "Plots",
-    "DataFrames",
-    "GR",
-    "Query"
-)
+compile_package("Plots", "DataFrames", "Query", "GR", force = true)
 
-compile_package(packages_to_bake..., force = true)
