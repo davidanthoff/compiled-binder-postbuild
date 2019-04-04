@@ -1,6 +1,6 @@
 #!/usr/bin/env julia
 
-using PackageCompiler
+using Pkg, PackageCompiler
 
 blacklist = [:PackageCompiler]
 
