@@ -2,5 +2,9 @@
 
 using PackageCompiler
 
+blacklist = [:PackageCompiler]
+
+pkg_to_compile = filter(i->!in(i, blacklist), Symbol.(keys(Pkg.Types.Context().env.project.deps)))
+
 # packages to bake in
-compile_incremental(:Plots, :DataFrames, :Query, :GR, force = true)
+compile_incremental(pkg_to_compile..., force = true)
