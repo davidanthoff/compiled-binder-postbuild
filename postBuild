@@ -3,4 +3,4 @@
 using PackageCompiler
 
 # packages to bake in
-compile_package("Plots", "DataFrames", "Query", "GR", force = true)
+compile_incremental(:Plots, :DataFrames, :Query, :GR, force = true)
